@@ -26,8 +26,7 @@ agenda-contatos-python/
 ├── contact.py
 ├── files.py
 │
-├── dados/
-│   └── contacts.json
+├── contacts.json
 │
 ├── README.md
 └── .gitignore

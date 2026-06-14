@@ -74,7 +74,23 @@ def edit_contact (contacts):
 
     for contact in contacts:
         if (contact['name'].strip().lower() == name.lower()):
-            contact['name'] = input(new_name)
+            print("Contato Encontrado com sucesso! \n")
+            print (f"Nome atual do contato : {contact['name']}")
+            print(f"Sobrenome Atual do Contato: {contact['surname']}")
+            print (f"Número atual do Contato: {contact['number_contact']}")
+            print(f"Descrição atual do Contato: {contact['description']}") 
+            
+            new_name = input("Novo nome: ").strip()
+            new_surname = input("Novo Sobrenome: ").strip()
+            new_numbercont = input("Novo Número: ").strip()
+            new_description= input("Nova Descrição: ").strip()
 
+            contact['name'] = new_name
+            contact['surname'] = new_surname
+            contact['number_contact'] = new_numbercont
+            contact['description'] = new_description
+
+            print("Contato atualizado com sucesso! ")
+            return
 
     print("Nenhum contato Encontrado, verifique os contatos cadastrados! ")
